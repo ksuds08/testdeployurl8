@@ -182,7 +182,7 @@ jobs:
         if: steps.deploy.outputs.url != ''
         run: |
           curl -X POST \
-            "${{ secrets.FLOWGLASS_API_URL || 'https://gfuimydpzkqzpcqqhvpu.supabase.co' }}/functions/v1/update-deployment-url" \
+            "${{ secrets.FLOWGLASS_API_URL || 'https://ycojnfmwmmeanstlqfes.supabase.co' }}/functions/v1/update-deployment-url" \
             -H "Content-Type: application/json" \
             -H "Authorization: Bearer ${{ secrets.FLOWGLASS_API_KEY }}" \
             -d '{
